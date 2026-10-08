@@ -1,4 +1,4 @@
-import { dispatchApi } from '../server/plugin.js'
+import { dispatchApi } from './plugin.js'
 
 function tokenFrom(req) {
   const value = req.headers['x-positivo-token'] ?? req.headers['X-Positivo-Token']

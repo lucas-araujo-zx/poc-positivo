@@ -108,108 +108,102 @@ button, .cta {
 }
 
 .login-page {
-  position: relative;
-  height: 100vh;
-  height: 100dvh;
-  display: grid;
-  place-items: center;
-  background: #16181b;
-  color: var(--white);
-  overflow: hidden;
-}
-
-.login-stage {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.watermark {
-  position: absolute;
-  left: -4vw;
-  bottom: -8vh;
-  margin: 0;
-  color: transparent;
-  font-family: Montserrat, sans-serif;
-  font-size: clamp(92px, 18vw, 240px);
-  font-weight: 700;
-  letter-spacing: -0.06em;
-  line-height: 0.8;
-  -webkit-text-stroke: 1px rgba(156, 230, 230, 0.28);
-  animation: drift 14s ease-in-out infinite alternate;
-}
-
-.scanline {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 18vh;
-  background: linear-gradient(180deg, transparent, rgba(156, 230, 230, 0.08), transparent);
-  animation: scan 7.5s linear infinite;
-}
-
-.beam {
-  position: absolute;
-  top: 12%;
-  left: -20%;
-  width: 38%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
-  animation: beam 6.5s ease-in-out infinite;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .login-layout {
-  position: relative;
-  width: min(1040px, calc(100% - 40px));
+  flex: 1;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+  align-items: stretch;
+}
+
+.login-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  padding: 48px 56px;
+  background: var(--header);
+  color: var(--white);
 }
 
 .login-copy img {
   height: 34px;
   width: auto;
-  animation: rise 0.7s ease both;
+  margin-bottom: 28px;
+  animation: settle 0.45s ease both;
+}
+
+.login-copy .kicker {
+  color: var(--cyan);
 }
 
 .login-copy h1 {
   margin: 0;
   max-width: 11ch;
   font-family: Montserrat, sans-serif;
-  font-size: clamp(40px, 5vw, 64px);
-  line-height: 0.96;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.02;
   letter-spacing: -0.04em;
-  animation: rise 0.8s 0.08s ease both;
+  animation: settle 0.5s 0.06s ease both;
 }
 
 .login-copy p:last-child {
-  max-width: 38ch;
+  max-width: 34ch;
+  margin: 16px 0 0;
   color: #c9d0d8;
   font-size: 18px;
-  animation: rise 0.8s 0.2s ease both;
-}
-
-.rule {
-  display: block;
-  width: 132px;
-  height: 3px;
-  margin: 18px 0;
-  background: var(--cyan);
-  transform-origin: left;
-  animation: draw 0.9s 0.25s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation: settle 0.5s 0.12s ease both;
 }
 
 .login-panel {
   position: relative;
+  align-self: center;
+  justify-self: center;
+  width: min(420px, calc(100% - 64px));
   display: grid;
   gap: 16px;
   padding: 28px;
-  background: var(--paper);
+  background: var(--white);
   color: var(--ink);
+  border: 1px solid var(--line);
   border-radius: 8px;
-  border-top: 4px solid var(--cyan);
-  animation: rise 0.8s 0.15s ease both;
+  animation: settle 0.5s 0.1s ease both;
+}
+
+.login-rail {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 20px 32px 24px;
+  background: var(--header);
+}
+
+.login-rail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--cyan);
+  transform-origin: left;
+  animation: draw 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.login-rail p {
+  margin: 0;
+  color: var(--white);
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(48px, 9vw, 120px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
 }
 
 .login-autofill-trap {
@@ -537,20 +531,9 @@ button, .cta {
   to { transform: scaleX(1); }
 }
 
-@keyframes drift {
-  from { transform: translateX(0); }
-  to { transform: translateX(3vw); }
-}
-
-@keyframes scan {
-  from { top: -20vh; }
-  to { top: 110vh; }
-}
-
-@keyframes beam {
-  0% { transform: translateX(0); opacity: 0; }
-  20% { opacity: 1; }
-  100% { transform: translateX(280%); opacity: 0; }
+@keyframes settle {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes hero-in {
@@ -573,8 +556,11 @@ button, .cta {
 
 @media (max-width: 800px) {
   .login-layout, .extra-row { grid-template-columns: 1fr; }
+  .login-copy { padding: 36px 24px 32px; }
   .login-copy h1 { max-width: none; }
-  .picker, .session, .login-layout { width: min(100% - 32px, 1120px); }
+  .login-panel { width: min(420px, calc(100% - 32px)); margin: 28px 0; }
+  .login-rail { padding: 18px 20px 14px; }
+  .picker, .session { width: min(100% - 32px, 1120px); }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -32,17 +32,11 @@ export function Login({ error, loading, onSubmit }) {
       <a className="skip-link" href="#entrar">
         Ir para o acesso
       </a>
-      <div className="login-stage" aria-hidden="true">
-        <p className="watermark">Positivo</p>
-        <span className="scanline" />
-        <span className="beam" />
-      </div>
       <section className="login-layout">
         <div className="login-copy">
           <img src={LOGO} alt="Positivo Empresas" />
           <p className="kicker">Laboratório</p>
           <h1>Teste os agentes da Positivo.</h1>
-          <span className="rule" />
           <p>
             Um token abre a bancada. Depois você escolhe o assistente e
             conversa por voz ou por texto.
@@ -81,6 +75,9 @@ export function Login({ error, loading, onSubmit }) {
           ) : null}
         </form>
       </section>
+      <footer className="login-rail" aria-hidden="true">
+        <p>Positivo</p>
+      </footer>
     </div>
   )
 }
