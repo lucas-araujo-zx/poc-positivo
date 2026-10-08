@@ -1,0 +1,1478 @@
+[
+  {
+    "id": "214",
+    "slug": "notebook-positivo-master-n6440-intel-core-i5-1335u-shell-efi-8gb-ram-512gb-ssd-14-full-hd-retroiluminado-cinza-214",
+    "categoria": "notebooks",
+    "nome": "Positivo Master N6440",
+    "nomeCompleto": "Notebook Positivo Master N6440 Intel® Core™ i5-1335U Shell EFI 8GB RAM 512GB SSD 14” Full HD Retroiluminado - Cinza",
+    "codigo": "000000000003053776",
+    "resumo": "Notebook corporativo com Intel Core, estrutura de metal resistente a quedas e vibrações, testado em normas militares. Desempenho e segurança para empresas.",
+    "precoPix": 3200.0,
+    "parcelas": "10x R$ 355,56",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/214/index/0?h=ec7e72f4fa1a2f3a75d4aee5f4ac32b8a2da18ea",
+    "linha": [
+      "Positivo Master",
+      "Positivo"
+    ],
+    "marca": "Positivo",
+    "processador": "Intel Core i5",
+    "sistema": "Shell EFI",
+    "armazenamento": "512GB SSD",
+    "memoria": "8GB",
+    "tela": "14\"",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "Intel® Core™ i5-1335U, 13ª Geração, (3.70 GHz, 12 MB Cache, 10 Cores, 12 Threads), Frequência Turbo até 5.00 GHz"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Shell EFI (Sem Sistema Operacional)"
+      },
+      {
+        "chave": "Tela",
+        "valor": "LCD 14”, Widescreen, Anti-reflexiva, Resolução Full HD (1920 x 1080), LED, TN, Ângulo de abertura do LCD de 180°"
+      },
+      {
+        "chave": "Chipset",
+        "valor": "SoC (System on Chip), funcionalidades integradas junto ao processador"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "8GB DDR4"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "2x SO-DIMM com suporte para até 64 GB¹ DDR4 SDRAM (3200 MHz, Non-ECC), Suporte ao modo Dual-channel"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "512GB SSD, PCIe Gen 4 x4, NVMe, M.2 2280"
+      },
+      {
+        "chave": "Unidade Ótica",
+        "valor": "Não disponível"
+      },
+      {
+        "chave": "Leitor de Cartões",
+        "valor": "MicroSD 4.0 (SD / SDHC / SDXC)"
+      },
+      {
+        "chave": "Webcam",
+        "valor": "HD 720p com cortina de privacidade"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "Áudio de alta definição (HD Áudio), Microfones digitais (dual) integrados, 2x alto-falantes estéreo com amplificador (total de 4W)"
+      },
+      {
+        "chave": "LAN",
+        "valor": "Intel i219V 10/100/1000 Mbps (autosense), padrão Gigabit Ethernet"
+      },
+      {
+        "chave": "WLAN",
+        "valor": "Intel® Wi-Fi 6 AX201 (802.11ax) 2x2 + Bluetooth 5.2"
+      },
+      {
+        "chave": "Portas de Conexão",
+        "valor": "1x USB-C Thunderbolt™ 4 (PD, DP, dados e carregamento), 1x USB-C 3.2 Gen 2 (PD, DP, dados e carregamento), 1x USB 3.2 Gen 2 Type-A (Always On), 1x USB 3.2 Gen 1 Type-A, 1x HDMI 2.0, 1x RJ-45, 1x DC-IN, 1x Áudio combo (entrada + saída)"
+      },
+      {
+        "chave": "Slots de Expansão",
+        "valor": "1x PCIe Gen 4 x4 (M.2 2280) para SSD, 1x PCIe Gen 3 x4 / SATA (M.2 2280) para SSD (com suporte a Intel® Optane™), 1x PCIe x1 para WiFi (M.2 2230)"
+      },
+      {
+        "chave": "Gráficos",
+        "valor": "Intel® Iris® Xe Graphics com memória alocada dinamicamente até 32 GB"
+      },
+      {
+        "chave": "Compatibilidade Gráfica",
+        "valor": "Suporte a Microsoft® DirectX® 12 e OpenGL 4.5"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "Padrão ABNT2, 88 teclas com retroiluminação, sinalizador Caps Lock, resistência a derramamento com dreno"
+      },
+      {
+        "chave": "Touchpad",
+        "valor": "Tipo Clickpad, botões integrados, suporte a gestos, toques múltiplos e função de rolagem, resistente a líquidos"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "Leitor de impressões digitais compatível com Windows Hello, TPM 2.0 integrado, trava tipo Kensington, suporte a Computrace³"
+      },
+      {
+        "chave": "Chassi",
+        "valor": "Tampas e estrutura em alumínio, dobradiças metálicas, base antiderrapante, botão liga/desliga"
+      },
+      {
+        "chave": "LEDs Indicadores",
+        "valor": "Ligado/Desligado/Hibernação, Atividade da unidade, WiFi, Bateria/Carregamento, Caps Lock, Webcam"
+      },
+      {
+        "chave": "Fonte de Alimentação",
+        "valor": "65 W, DC-In, eficiência nível VI, 100–240 V (+/-10%), 50–60 Hz, 3 pinos, com suporte a fast charging"
+      },
+      {
+        "chave": "Bateria",
+        "valor": "57 Wh (3 células, 4936 mAh, 11,55 V), Polímero de Lítio-Ion interna removível, fast charging (80% em até 1 hora com o notebook desligado)"
+      },
+      {
+        "chave": "Cor",
+        "valor": "Cinza"
+      },
+      {
+        "chave": "Dimensões (L x P x A)",
+        "valor": "324,2 x 219,7 x 18,5 mm"
+      },
+      {
+        "chave": "Peso Líquido",
+        "valor": "1,45 Kg"
+      },
+      {
+        "chave": "Peso Bruto",
+        "valor": "1,95 Kg"
+      },
+      {
+        "chave": "Embalagem",
+        "valor": "375 x 335 x 60 mm"
+      },
+      {
+        "chave": "Conteúdo da Embalagem",
+        "valor": "Notebook, Adaptador CA com cabo padrão Inmetro e Guia Rápido de Instalação"
+      },
+      {
+        "chave": "Certificações / Compatibilidades",
+        "valor": "Compatibilidade de hardware com Microsoft® Windows 11® e 10 (x64), INMETRO 170/2012, IEC 61000, CISPR22/24, IEC 60950/62368, NBR 10152 (ISO 7779 e ISO 9296), RoHS, DMI 2.0, MIL-STD 810G/H (queda, choque, umidade, poeira, vibração, temperatura e pressão)"
+      },
+      {
+        "chave": "Código / EAN",
+        "valor": "3053776 / 7908068812418"
+      }
+    ]
+  },
+  {
+    "id": "318",
+    "slug": "notebook-positivo-master-n8460-copilot-pc-intel-core-ultra-5-325-windows-11-home-16gb-ram-512gb-ssd-14-full-hd-cinza-318",
+    "categoria": "notebooks",
+    "nome": "Positivo Master N8460",
+    "nomeCompleto": "Notebook Positivo Master N8460 Copilot+PC Intel® Core™ Ultra 5-325 Windows 11 Home 16GB RAM 512GB SSD 14\" Full HD - Cinza",
+    "codigo": "000000000003054392",
+    "resumo": "Notebook Positivo Master N8460 Copilot+ PC foi desenvolvido para quem busca alto desempenho, mobilidade e segurança em uma rotina profissional intensa.",
+    "precoPix": 7659.0,
+    "parcelas": "10x R$ 851,00",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/318/index/0?h=c0fed1ef24fb8d9fdf12ea3a3e88d9d2ab581fcc",
+    "linha": [
+      "Copilot+ PC",
+      "Positivo Master",
+      "Positivo"
+    ],
+    "marca": "Positivo",
+    "processador": "Intel Core Ultra 5",
+    "sistema": "Windows 11 Home",
+    "armazenamento": "512GB SSD",
+    "memoria": "16GB",
+    "tela": "14\"",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "Intel® Core™ Ultra 5 325, Série 3 (Panther Lake), Intel® AI Boost (NPU integrada)"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Windows 11 Home Copilot+ PC (64 bits)"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "16GB DDR5 SO-DIMM, 5600MT/s"
+      },
+      {
+        "chave": "Tela",
+        "valor": "14\" LED WUXGA, IPS, 1920x1200, 16:10, Antirreflexiva, brilho de 300 nits, contraste 800:1"
+      },
+      {
+        "chave": "Abertura do LCD",
+        "valor": "180°"
+      },
+      {
+        "chave": "Placa-mãe",
+        "valor": "Positivo POS-SISWOAA, SoC (System on Chip), suporte à Tecnologia de Virtualização Intel® VT-d"
+      },
+      {
+        "chave": "Placa de Vídeo",
+        "valor": "Intel® Graphics integrada ao processador, compatível com Microsoft® DirectX® 12 Ultimate e OpenGL 4.6"
+      },
+      {
+        "chave": "Conectividade",
+        "valor": "Bluetooth® 6, Wi-Fi (IEEE 802.11BE) Wi-Fi 7, Gigabit Ethernet 10/100/1000Mbps (RJ45)"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "HD Áudio Realtek ALC233, 2 Microfones Digitais Integrados, 2 Alto-falantes Estéreo (4W) e Cancelamento de Ruído dos Microfones"
+      },
+      {
+        "chave": "Leitor de Cartões",
+        "valor": "MicroSD 4.0 compatível com SD, SDHC e SDXC"
+      },
+      {
+        "chave": "Portas de Conexão",
+        "valor": "2 Conexões Thunderbolt™ 4 (USB Tipo C com Power Delivery 3.1, DisplayPort 2.1, dados e carregamento), 1 Conexão USB 3.2 Gen 2 (Always On), 1 Conexão USB 3.2 Gen 1, 1 Conexão HDMI 2.1, 1 Conexão RJ45, 1 Combo (Áudio/Microfone), 1 Conexão DC-IN e 1 Leitor Smart Card (opcional)"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "2 Slots SO-DIMM DDR5, Dual Channel, capacidade máxima de 64GB"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "512GB SSD M.2 NVMe Gen4"
+      },
+      {
+        "chave": "Slots de Expansão",
+        "valor": "1 Slot M.2 PCIe Gen5 x4 para SSD, 1 Slot M.2 PCIe Gen4 x4 para SSD e 1 Slot M.2 2230 para Wi-Fi"
+      },
+      {
+        "chave": "Webcam",
+        "valor": "Câmera Full HD 1080p com Infravermelho (IR), Windows Hello e Cortina de Privacidade Integrada"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "Português-Brasil, ABNT2, 84 teclas, Retroiluminado, Resistente a Derramamento de Líquidos com Dreno para Escoamento"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "Touchpad com Botões Integrados, Suporte a Gestos, Multitoque, Função de Rolagem e Resistência a Derramamento de Líquidos"
+      },
+      {
+        "chave": "Carregador",
+        "valor": "65W, DC-IN, bivolt automático (100~240V), suporte a Fast Charging"
+      },
+      {
+        "chave": "Bateria",
+        "valor": "3 células, Li-Polímero, 70Wh, 6000mAh, 11,67V"
+      },
+      {
+        "chave": "Cor",
+        "valor": "Cinza"
+      },
+      {
+        "chave": "Dimensões",
+        "valor": "31,8 x 22,49 x 1,79cm"
+      },
+      {
+        "chave": "Peso Líquido",
+        "valor": "1,45kg"
+      },
+      {
+        "chave": "Conteúdo da Embalagem",
+        "valor": "Notebook, Adaptador CA, Cabo de Alimentação padrão NBR 14136 e Guia Rápido/Manual do Usuário"
+      },
+      {
+        "chave": "Certificações",
+        "valor": "Portaria Inmetro 304/2023, IEC 61000, CISPR22, CISPR24, IEC 62368, RoHS, DMI 2.0 e MIL-STD 810H"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "Sensor de Intrusão, TPM 2.0, Microsoft Pluton®, Intel® Boot Guard, Windows Hello, Trava Kensington®, Limpeza Segura de SSD via BIOS e suporte ao Absolute"
+      },
+      {
+        "chave": "Código / EAN",
+        "valor": "3054392 | 7908068825999"
+      },
+      {
+        "chave": "Modelo",
+        "valor": "Positivo Master N8460 Copilot+ PC"
+      }
+    ]
+  },
+  {
+    "id": "271",
+    "slug": "notebook-positivo-vision-i15-intel-core-i3-n300-linux-8gb-ram-256gb-ssd-fhd-15-6-lumina-bar-preto-271",
+    "categoria": "notebooks",
+    "nome": "Positivo Vision i15",
+    "nomeCompleto": "Notebook Positivo Vision i15 Intel® Core® i3-N300 Linux 8GB RAM 256GB SSD FHD 15.6\" Lumina Bar - Preto",
+    "codigo": "000000000003002949",
+    "resumo": "Notebook com Intel Core i3 e tela Full HD: Eficiente para gestão, atendimento e vendas. Tecnologia acessível para apoiar o crescimento da empresa.",
+    "precoPix": 2925.0,
+    "parcelas": "10x R$ 325,00",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/271/index/0?h=5379c77b687d20ef902a5c39d5f9966362bfe479",
+    "linha": [
+      "Positivo"
+    ],
+    "marca": "Positivo",
+    "processador": "Intel Core i3",
+    "sistema": "Linux",
+    "armazenamento": "256GB SSD",
+    "memoria": "8GB",
+    "tela": "15.6\"",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "Intel® Core i3-N300, Série N (3.0 GHz com frequência de Burst de até 3.80 GHz, 6MB Cache, 8 Núcleos, 8 Threads)"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Linux Debian"
+      },
+      {
+        "chave": "Placa de Vídeo",
+        "valor": "Intel® UHD Graphics"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "Modos de Som Estéreo"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "8GB DDR4 SO-DIMM (Módulo), 3200 MHz, 1 Slot (ocupado), Capacidade máxima 16GB"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "256GB SSD M.2 NVMe, Velocidade de leitura até 2500 Mbps"
+      },
+      {
+        "chave": "Slots de Armazenamento",
+        "valor": "1 x NVMe M.2 (ocupado)"
+      },
+      {
+        "chave": "Capacidade de Expansão de Armazenamento",
+        "valor": "1x Slot NVMe M.2 até 512GB SSD"
+      },
+      {
+        "chave": "Tela",
+        "valor": "15.6” LED Full HD, IPS, Widescreen, 1920 x 1080, 16:9, Antirreflexiva, 60Hz"
+      },
+      {
+        "chave": "Ângulo de Abertura da Tela",
+        "valor": "135°"
+      },
+      {
+        "chave": "Conectividade",
+        "valor": "Bluetooth 5.0, Wi-Fi IEEE 802.11 ac (dual band 2.4GHz e 5GHz)"
+      },
+      {
+        "chave": "Portas de Conexão",
+        "valor": "1 Conexão HDMI, 2 Conexões USB 3.2 Gen 1, 1 Conexão USB 2.0, 1 Conexão USB 3.2 Tipo C, 1 combo (microfone/áudio)"
+      },
+      {
+        "chave": "Webcam",
+        "valor": "Câmera Frontal HD 720p, com Lumina BAR"
+      },
+      {
+        "chave": "Leitor de Cartões",
+        "valor": "SD até 512GB"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "Português-Brasil ABNT2, 105 teclas + tecla Power (independente)"
+      },
+      {
+        "chave": "Teclado Numérico",
+        "valor": "Sim"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "Tipo Touchpad, com toque múltiplo, 2 botões integrados"
+      },
+      {
+        "chave": "Bateria",
+        "valor": "3 células, Li-Polímero 55Wh, integrada, até 10 horas"
+      },
+      {
+        "chave": "Carregador",
+        "valor": "45W, Bivolt 100~240V, 19V / 2.37A"
+      },
+      {
+        "chave": "Dimensões do Produto",
+        "valor": "35,9 x 1,86 x 24,15 cm"
+      },
+      {
+        "chave": "Peso Líquido",
+        "valor": "1,74 kg"
+      },
+      {
+        "chave": "Dimensões da Embalagem",
+        "valor": "49,7 x 5,9 x 27,6 cm"
+      },
+      {
+        "chave": "Peso Bruto",
+        "valor": "2,2 kg"
+      },
+      {
+        "chave": "Certificação ANATEL",
+        "valor": "06962-23-11470"
+      },
+      {
+        "chave": "SKU / EAN",
+        "valor": "3002949 / 7908068815709"
+      }
+    ]
+  },
+  {
+    "id": "159",
+    "slug": "notebook-vaio-fe15-intel-core-i7-1255u-windows-11-pro-8gb-ram-256gb-ssd-15-6-full-hd-cinza-grafite-159",
+    "categoria": "notebooks",
+    "nome": "Vaio FE15",
+    "nomeCompleto": "Notebook VAIO® FE15 Intel® Core™ i7-1255U Windows 11 Pro 8GB RAM 256GB SSD 15.6\" Full HD - Cinza Grafite",
+    "codigo": "000000000003343901",
+    "resumo": "Performance e confiabilidade para empresas: com Intel Core, tela Full HD 15”, memória e armazenamento expansível. Alto desempenho para os profissionais.",
+    "precoPix": 4300.0,
+    "parcelas": "10x R$ 477,78",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/159/index/0?h=0e29468479482a169ffc56e0e99c802ef16e9148",
+    "linha": [
+      "Vaio"
+    ],
+    "marca": "Vaio",
+    "processador": "Intel Core i7",
+    "sistema": "Windows 11 Pro",
+    "armazenamento": "256GB SSD",
+    "memoria": "8GB",
+    "tela": "15.6\"",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "Intel® Core™ i7-1255U, 12ª Geração, 3.50 GHz com frequência de Burst de até 4.70 GHz, 12MB Cache, 10 Núcleos, 12 Threads"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Windows 11 Pro A Positivo Empresas indica Windows 11 Pro para empresas"
+      },
+      {
+        "chave": "Softwares Adicionais",
+        "valor": "Experimente Microsoft 365 gratuitamente. 1 mês de avaliação para novos clientes do Microsoft 365. Necessário cartão de crédito. A menos que seja cancelado, as taxas de assinatura se aplicam após a avaliação."
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "8GB (Módulo) 3200MHz, 2x slot DDR4"
+      },
+      {
+        "chave": "Abertura do LCD",
+        "valor": "135°"
+      },
+      {
+        "chave": "Tela",
+        "valor": "15,6'' LED FHD, TN, Widescreen, 1920 x 1080, 16:9, Antirreflexiva, 60Hz"
+      },
+      {
+        "chave": "Placa de Vídeo",
+        "valor": "Intel® UHD Graphics"
+      },
+      {
+        "chave": "Conectividade",
+        "valor": "Conexão Bluetooth 5.1, Wi-Fi IEEE 802.11ac™"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "Áudio de alta definição (HD Áudio), Microfone e alto-falantes estéreo embutidos"
+      },
+      {
+        "chave": "Leitor de Cartões",
+        "valor": "SD card"
+      },
+      {
+        "chave": "Portas de Conexão",
+        "valor": "1 Conexão HDMI, 1 Conexão USB 2.0, 2 Conexões USB 3.2 Gen1, 1 Conexão USB 3.2 (tipo C), 1 combo (microfone/áudio), 1 Conexão de rede Ethernet (RJ45), 1 Conexão DC (energia)"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "2x slot DDR4, com suporte até 64GB"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "256GB SSD M.2 PCIe Gen3, 3000 Mbps"
+      },
+      {
+        "chave": "Webcam",
+        "valor": "Câmera Frontal 1.0 MP HD, 720p"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "Português-Brasil, ABNT2 com teclado numérico, 105 teclas, com resistência a água"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "Tipo Touchpad com controle preciso do cursor, com toque múltiplo, 2 botões integrados"
+      },
+      {
+        "chave": "Carregador",
+        "valor": "45W, 100-240V, 19V / 2.37A"
+      },
+      {
+        "chave": "Bateria",
+        "valor": "3 células, Li-Polímero 55Wh - integrada, até 10 horas"
+      },
+      {
+        "chave": "Cor",
+        "valor": "Cinza Grafite"
+      },
+      {
+        "chave": "Dimensões",
+        "valor": "35,9cm x 1,98cm x 24cm"
+      },
+      {
+        "chave": "Peso Líquido",
+        "valor": "1,75kg"
+      },
+      {
+        "chave": "Peso Bruto",
+        "valor": "2,4kg"
+      },
+      {
+        "chave": "Conteúdo da Embalagem",
+        "valor": "Notebook, Adaptador CA com cabo padrão Inmetro (carregador), Guia Rápido e Certificado de Garantia"
+      },
+      {
+        "chave": "Embalagem do Produto",
+        "valor": "46cm x 6cm x 28,5cm"
+      },
+      {
+        "chave": "Garantia",
+        "valor": "12 meses"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "Trava Kensington® Lock / TPM 2.0 (solução por firmware fTPM)"
+      },
+      {
+        "chave": "Código / EAN",
+        "valor": "3343901 | 7908068810643"
+      },
+      {
+        "chave": "Modelo",
+        "valor": "FE15 VJFE54F11X-B2412H"
+      },
+      {
+        "chave": "Certificado de Homologação da ANATEL",
+        "valor": "002581402198"
+      }
+    ]
+  },
+  {
+    "id": "273",
+    "slug": "notebook-vaio-pro-bk-intel-core-i5-1334u-windows-11-home-16gb-ram-512gb-ssd-14-full-hd-ips-com-fingerprint-cinza-escuro-273",
+    "categoria": "notebooks",
+    "nome": "Vaio Pro BK",
+    "nomeCompleto": "Notebook VAIO® Pro BK Intel® Core i5-1334U Windows 11 Home 16GB RAM 512GB SSD 14'' Full HD IPS com Fingerprint - Cinza Escuro",
+    "codigo": "000000000003344895",
+    "resumo": "Notebook corporativo com design sofisticado, acabamento premium e tela compacta de 14” para melhor mobilidade. Ideal para rotinas corporativas que exigem desempenho e praticidade.",
+    "precoPix": 5000.0,
+    "parcelas": "10x R$ 555,56",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/273/index/0?h=334aa895a49b4350443a87522958ce7be74d26c1",
+    "linha": [
+      "Vaio"
+    ],
+    "marca": "Vaio",
+    "processador": "Intel Core i5",
+    "sistema": "Windows 11 Home",
+    "armazenamento": "512GB SSD",
+    "memoria": "16GB",
+    "tela": "14\"",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "Intel® Core i5-1334U, 13ª Geração 3.40 GHz com frequência de Burst de até 4.60 GHz, 12MB Cache, 10 Núcleos, 12 Threads"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Windows 11 Home"
+      },
+      {
+        "chave": "Softwares Adicionais",
+        "valor": "Experimente Microsoft 365 gratuitamente. 1 mês de avaliação para novos clientes do Microsoft 365. Necessário cartão de crédito. A menos que seja cancelado, as taxas de assinatura se aplicam após a avaliação"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "1x16GB DDR4 SO-DIMM, 16GB RAM total (Módulo)"
+      },
+      {
+        "chave": "Abertura do LCD",
+        "valor": "180°"
+      },
+      {
+        "chave": "Tela",
+        "valor": "14'' LED FHD, IPS, Widescreen, 1920 x 1080, 16:9, Antirreflexiva, 60Hz"
+      },
+      {
+        "chave": "Placa de Vídeo",
+        "valor": "Processamento de vídeo integrado Intel® UHD Graphics"
+      },
+      {
+        "chave": "Conectividade",
+        "valor": "Conexão Bluetooth 5.2 / Conexão Wireless Wi-fi (Sem Fio), Rede sem fio Dual Band Wireless IEEE 802.11AX (Wi-Fi 6)"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "Áudio de alta definição (HD Áudio), Microfone e alto-falantes estéreo embutidos"
+      },
+      {
+        "chave": "Leitor de Cartões",
+        "valor": "micro SD"
+      },
+      {
+        "chave": "Portas de Conexão",
+        "valor": "1 Conexão HDMI 1.4, 2 Conexão USB 3.0/3.2 Gen 1, 1 Conexão USB 3.2 (Tipo C), 1 combo (microfone/áudio), 1 LAN RJ45"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "1x 32GB"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "512GB SSD M.2 NVMe Gen4 2500 Mbps / 1x M.2 (1x suporta PCIe Gen4 / PCIe Gen3), Capacidade máxima 1TB"
+      },
+      {
+        "chave": "Webcam",
+        "valor": "Câmera Frontal HD 720p"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "Português-Brasil, ABNT2, 88 teclas + Tecla Power"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "Tipo Touchpad, com toque múltiplo, 2 botões integrados"
+      },
+      {
+        "chave": "Carregador",
+        "valor": "65W 100 - 240V 19V / 3.42A (50 - 60Hz)"
+      },
+      {
+        "chave": "Bateria",
+        "valor": "2 células, Li-Polímero 51Wh - integrada Até 10 horas*"
+      },
+      {
+        "chave": "Cor",
+        "valor": "Cinza Chumbo"
+      },
+      {
+        "chave": "Dimensões",
+        "valor": "32,9 x 1,97 x 22,1 cm"
+      },
+      {
+        "chave": "Peso Líquido",
+        "valor": "1,34"
+      },
+      {
+        "chave": "Peso Bruto",
+        "valor": "1,89"
+      },
+      {
+        "chave": "Conteúdo da embalagem",
+        "valor": "Notebook, Adaptador CA com cabo padrão Inmetro (carregador), Guia Rápido e Certificado de Garantia"
+      },
+      {
+        "chave": "Embalagem do Produto",
+        "valor": "42,5 x 6 x 26 cm"
+      },
+      {
+        "chave": "Garantia",
+        "valor": "12 Meses"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "Trava Kensington® Lock, Com Desbloqueio digital (Fingerprint)"
+      },
+      {
+        "chave": "Código / EAN",
+        "valor": "3344895 | 7908068824213"
+      },
+      {
+        "chave": "Modelo",
+        "valor": "PC8970C11X-B0911H"
+      },
+      {
+        "chave": "Certificado de Homologação da ANATEL",
+        "valor": "120692104423"
+      },
+      {
+        "chave": "Expansão de Memória até",
+        "valor": "32GB"
+      }
+    ]
+  },
+  {
+    "id": "202",
+    "slug": "notebook-vaio-fe16-amdR-ryzen-5-5625u-linux-16gb-ram-512gb-ssd-16-ips-wuxga-cinza-grafite-202",
+    "categoria": "notebooks",
+    "nome": "Vaio FE16",
+    "nomeCompleto": "Notebook VAIO FE16 AMD® Ryzen 5-5625U Linux 16GB RAM 512GB SSD 16\" IPS WUXGA - Cinza Grafite",
+    "codigo": "000000000003344395",
+    "resumo": "Desempenho robusto com Intel Core ou AMD Ryzen, tela ampla de 16” IPS WUXGA, Wi-Fi 6, memória e armazenamento expansível. Performance para alta produtividade.",
+    "precoPix": 4050.0,
+    "parcelas": "10x R$ 450,00",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/202/index/0?h=f8047b76c3290e9f611318505d46490c770a9b42",
+    "linha": [
+      "Vaio"
+    ],
+    "marca": "Vaio",
+    "processador": "AMD Ryzen 5",
+    "sistema": "Linux",
+    "armazenamento": "512GB SSD",
+    "memoria": "16GB",
+    "tela": "16\"",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "AMD® Ryzen 5-5625U, 5ª Geração, 2.4 GHz com frequência de Burst de até 4.30 GHz, 16MB Cache, 6 Núcleos, 12 Threads"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Linux Debian 12"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "16GB (Módulo), DDR4, 3200 MHz"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "2x Slots ocupados"
+      },
+      {
+        "chave": "Expansão de Memória até",
+        "valor": "64GB (32GB + 32GB)"
+      },
+      {
+        "chave": "Tela",
+        "valor": "16\", WUXGA, IPS, Widescreen, 1920x1200, Antirreflexiva, 16:10, 60Hz"
+      },
+      {
+        "chave": "Abertura do LCD",
+        "valor": "180º"
+      },
+      {
+        "chave": "Placa de Vídeo",
+        "valor": "Integrada, AMD Radeon™ Graphics, DDR4"
+      },
+      {
+        "chave": "Conectividade",
+        "valor": "Bluetooth 5.1, Wi-Fi IEEE 802.11 ax™ (sem fio), Ethernet RJ45 (com fio)"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "Áudio de alta definição (HD Áudio), Microfone e alto-falantes estéreo embutidos"
+      },
+      {
+        "chave": "Leitor de Cartões",
+        "valor": "SD"
+      },
+      {
+        "chave": "Portas de Conexão",
+        "valor": "1 HDMI, 1 USB 2.0, 2 USB 3.0/3.2 Gen 1, 1 USB 3.2 Tipo C, 1 combo (microfone/áudio), 1 RJ45"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "512GB SSD M.2 NVMe Gen3, 2500 Mbps, 1x Slot M.2 (ocupado), Capacidade Máxima até 1TB SSD"
+      },
+      {
+        "chave": "Webcam",
+        "valor": "Câmera Frontal HD 720p"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "Português-Brasil, ABNT2, 106 teclas, com resistência à água"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "Tipo Touchpad, com toque múltiplo, 2 botões integrados"
+      },
+      {
+        "chave": "Carregador",
+        "valor": "65W, 100~240V, 19V / 3.42A"
+      },
+      {
+        "chave": "Bateria",
+        "valor": "3 células, Li-Polímero, 55Wh, integrada, Até 10 horas"
+      },
+      {
+        "chave": "Cor",
+        "valor": "Cinza Grafite"
+      },
+      {
+        "chave": "Dimensões do Produto (cm)",
+        "valor": "35,9 x 25,5 x 1,98 cm"
+      },
+      {
+        "chave": "Peso Líquido",
+        "valor": "1,85 kg"
+      },
+      {
+        "chave": "Peso Bruto",
+        "valor": "2,4 kg"
+      },
+      {
+        "chave": "Embalagem do Produto (cm)",
+        "valor": "46 x 6 x 28,5 cm"
+      },
+      {
+        "chave": "Garantia",
+        "valor": "12 Meses"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "Trava Kensington® Lock"
+      },
+      {
+        "chave": "Código / EAN",
+        "valor": "3344395 / 7908068817130"
+      },
+      {
+        "chave": "Modelo",
+        "valor": "VJFE69F11X-B0711H"
+      },
+      {
+        "chave": "Certificado de Homologação da ANATEL",
+        "valor": "002581402198"
+      },
+      {
+        "chave": "Conteúdo da Embalagem",
+        "valor": "Notebook, Adaptador CA com cabo padrão Inmetro (carregador), Certificado de Garantia"
+      }
+    ]
+  },
+  {
+    "id": "339",
+    "slug": "computador-positivo-master-d2400-intel-core-i3-12100-windows-11-home-4gb-ram-256gb-ssd-preto-339",
+    "categoria": "computadores",
+    "nome": "Positivo Master D2400",
+    "nomeCompleto": "Computador Positivo Master D2400 Intel® Core™ i3-12100 Windows 11 Home 4GB RAM 256GB SSD - Preto",
+    "codigo": "1307015",
+    "resumo": "Potência e alta durabilidade com Intel Core, Wi-Fi 6, várias opções de conectividade, com teclado e mouse. Solução na medida certa para o uso empresarial.",
+    "precoPix": 2959.99,
+    "parcelas": "10x R$ 328,89",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/339/index/0?h=43b9d2954dabec3b7955f6275b4d1ec053240d20",
+    "linha": [
+      "Desktops"
+    ],
+    "marca": "Positivo",
+    "processador": "Intel Core i3",
+    "sistema": "Windows 11 Home",
+    "armazenamento": "256GB SSD",
+    "memoria": "4GB",
+    "tela": "N/A",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "Intel® Core™ i3-12100, 12ª Geração, (3.30 GHz, 12 MB Cache, 4 Cores, 8 Threads) com Intel® Turbo Boost até 4.30 GHz, Soquete - LGA 1700, Chipset - Intel® H610 Express, Placa-mãe -Positivo POS-EIH610EX"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Windows 11 Home"
+      },
+      {
+        "chave": "Softwares Adicionais",
+        "valor": "Experimente Microsoft 365 gratuitamente. 1 mês de avaliação para novos clientes do Microsoft 365. Necessário cartão de crédito. A menos que seja cancelado, as taxas de assinatura se aplicam após a avaliação"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "4 GB DDR4 SDRAM (3200 MHz)"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "2x DIMM, suporte ao modo Dual Channel, até 64 GB DDR4 SDRAM (3200 MHz)"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "SSD de 256 GB, NVMe, M.2 2280"
+      },
+      {
+        "chave": "Unidade Ótica",
+        "valor": "Não"
+      },
+      {
+        "chave": "Leitor de Cartões",
+        "valor": "Não"
+      },
+      {
+        "chave": "Gráficos",
+        "valor": "Intel® UHD 730 Graphics integrado ao processador"
+      },
+      {
+        "chave": "Aceleração Gráfica",
+        "valor": "Suporte a vídeos em alta definição (HD) e Microsoft® DirectX®"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "Áudio de alta definição (HD Áudio) integrado de 7.1 canais"
+      },
+      {
+        "chave": "Rede",
+        "valor": "10/100/1000 Mbps, padrão Gigabit Ethernet"
+      },
+      {
+        "chave": "Slots de Expansão",
+        "valor": "1x PCI Express x16 Gen4; 1x PCI Express x1"
+      },
+      {
+        "chave": "Portas Traseiras",
+        "valor": "2x PS/2 (teclado e mouse), 2x USB 2.0, 2x USB 3.2 Gen 2, 1x HDMI, 1x VGA, 1x DP, 1x RJ-45, 1x Serial DB9, 3x Áudio (2x Line in – Microfone e Auxiliar, 1x Line out – Alto-falantes)"
+      },
+      {
+        "chave": "Portas Frontais",
+        "valor": "4x USB 2.0, 1x Line in (Microfone), 1x Line out (Fone de Ouvido)"
+      },
+      {
+        "chave": "Gabinete",
+        "valor": "Formato torre, cor preta"
+      },
+      {
+        "chave": "Baias de Expansão (Externa)",
+        "valor": "1x 5.25”; 1x 3,5”"
+      },
+      {
+        "chave": "Baias de Expansão (Interna)",
+        "valor": "2x 3,5” ou 2x 2,5” ou 1x 3,5” + 1x 2,5”"
+      },
+      {
+        "chave": "Fonte",
+        "valor": "150 W, 100240 V / 5060 Hz automática"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "Português Brasil, ABNT2"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "Ótico, 2 botões, com scroll"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "Anilha para cadeado, Chip de criptografia TPM 2.0"
+      },
+      {
+        "chave": "Dimensões do Gabinete (C x L x A)",
+        "valor": "364 x 175 x 405 mm"
+      },
+      {
+        "chave": "Dimensões da Embalagem (C x L x A)",
+        "valor": "480 x 300 x 535 mm"
+      },
+      {
+        "chave": "Peso Líquido / Bruto",
+        "valor": "4,5 Kg / 6,5 Kg"
+      },
+      {
+        "chave": "Monitor",
+        "valor": "Vendido separadamente"
+      },
+      {
+        "chave": "Documentos e Acessórios",
+        "valor": "Cabos e guia rápido de instalação"
+      },
+      {
+        "chave": "Garantia",
+        "valor": "12 Meses"
+      },
+      {
+        "chave": "SKU / EAN",
+        "valor": "1307015 / 7896904688986"
+      }
+    ]
+  },
+  {
+    "id": "348",
+    "slug": "positivo-master-a6400-intel-core-i5-1334u-windows-11-home-16gb-ram-512gb-ssd-23-8-full-hd-ips-cinza-348",
+    "categoria": "computadores",
+    "nome": "Positivo Master A6400",
+    "nomeCompleto": "Positivo Master A6400 Intel® Core™ i5-1334U Windows 11 Home 16GB RAM 512GB SSD 23,8'' Full HD IPS - Cinza",
+    "codigo": "1703377",
+    "resumo": "Tudo integrado, design elegante e tela ajustável de 23,8\". Equipado com Intel Core, Windows 11 Pro e bateria interna para mais organização, produtividade e eficiência no ambiente corporativo.",
+    "precoPix": 5510.0,
+    "parcelas": "10x R$ 612,22",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/348/index/0?h=bedebea44a8fe8ec22258129414eca4763a86fe7",
+    "linha": [
+      "All in One"
+    ],
+    "marca": "Positivo",
+    "processador": "Intel Core i5",
+    "sistema": "Windows 11 Home",
+    "armazenamento": "512GB SSD",
+    "memoria": "16GB",
+    "tela": "23.8\"",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "Intel® Core™ i5-1334U, 13ª Geração, 1,30GHz com frequência de Turbo Boost de até 4,60GHz, 12MB Cache, 10 Núcleos, 12 Threads"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Windows 11 Home"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "16GB DDR4 SO-DIMM (1x16GB), 3200MHz"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "2 Slots SO-DIMM DDR4, Dual Channel, capacidade máxima de 64GB"
+      },
+      {
+        "chave": "Tela",
+        "valor": "23,8\" LED Full HD, IPS, Widescreen, 1920x1080, 16:9, Antirreflexiva, 60Hz, 99% sRGB"
+      },
+      {
+        "chave": "Ajuste da Tela",
+        "valor": "Inclinação de -5° a +21°"
+      },
+      {
+        "chave": "Placa de Vídeo",
+        "valor": "Intel® UHD Graphics integrada ao processador"
+      },
+      {
+        "chave": "Conectividade",
+        "valor": "Bluetooth® 5.2, Wi-Fi (IEEE 802.11AX) Wi-Fi 6, Gigabit Ethernet (RJ45)"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "HD Áudio, 2 Microfones Digitais Integrados, 2 Alto-falantes Estéreo (4W)"
+      },
+      {
+        "chave": "Leitor de Cartões",
+        "valor": "SD"
+      },
+      {
+        "chave": "Portas de Conexão",
+        "valor": "4 Conexões USB 3.2 Gen 1 Tipo A, 2 Conexões USB 2.0 Tipo A, 1 Conexão HDMI 1.4, 1 Conexão RJ45, 1 Combo (Áudio/Microfone), 1 Conexão DC-IN"
+      },
+      {
+        "chave": "Slots de Expansão",
+        "valor": "1 Slot PCIe 4.0 x4 (M.2 2280) para SSD, 1 Slot PCIe x1 (M.2 2230) para Wi-Fi"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "512GB SSD M.2 NVMe"
+      },
+      {
+        "chave": "Webcam",
+        "valor": "Câmera HD 720p com sistema retrátil de privacidade"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "USB, Português-Brasil, ABNT2"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "USB Óptico, 2 botões com scroll"
+      },
+      {
+        "chave": "Fonte de Alimentação",
+        "valor": "90W, 19VDC / 4,74A, bivolt automática (100~240V)"
+      },
+      {
+        "chave": "Bateria",
+        "valor": "Li-Polímero, 3 células, 26,22Wh, 2300mAh, 11,4V"
+      },
+      {
+        "chave": "Cor",
+        "valor": "Cool Gray (Cinza)"
+      },
+      {
+        "chave": "Dimensões",
+        "valor": "53,96 x 19,75 x 40,67 a 51,63cm (com pedestal ajustável)"
+      },
+      {
+        "chave": "Conteúdo da Embalagem",
+        "valor": "All in One, Adaptador CA com cabo padrão Inmetro, Pedestal Ajustável, Bateria, Teclado USB, Mouse USB, Guia Rápido e Certificado de Garantia"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "TPM 2.0 integrado e Trava Kensington®"
+      },
+      {
+        "chave": "Certificações",
+        "valor": "IEC 61000, IEC 62368 e RoHS"
+      },
+      {
+        "chave": "Código / EAN",
+        "valor": "1703377 | 7908068827276"
+      },
+      {
+        "chave": "Modelo",
+        "valor": "Positivo Master A6400 F165126WC"
+      }
+    ]
+  },
+  {
+    "id": "345",
+    "slug": "positivo-master-c4500-minipro-amd-ryzen-5-pro-8500ge-windows-11-pro-8gb-ddr5-256gb-ssd-nvme-preto-345",
+    "categoria": "computadores",
+    "nome": "Positivo Master C4500 MiniPro",
+    "nomeCompleto": "Positivo Master C4500 MiniPro AMD® Ryzen™ 5 PRO 8500GE Windows 11 Pro 8GB DDR5 256GB SSD NVMe - Preto",
+    "codigo": "1308856",
+    "resumo": "Desktop corporativo compacto com AMD Ryzen: Econômico e eficiente para tarefas corporativas do dia a dia. Acompanha teclado e mouse.",
+    "precoPix": 4400.0,
+    "parcelas": "10x R$ 488,89",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/345/index/0?h=ca8bede4f7270f4f82fd28fd04c9d33b920d37ef",
+    "linha": [
+      "Mini desktops"
+    ],
+    "marca": "Positivo",
+    "processador": "AMD Ryzen 5 PRO",
+    "sistema": "Windows 11 Pro",
+    "armazenamento": "256GB SSD",
+    "memoria": "8GB",
+    "tela": "N/A",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "AMD® Ryzen™ 5 PRO 8500GE, 3,40GHz com frequência de Boost de até 5,00GHz, 22MB Cache, 6 Núcleos, 12 Threads, TDP de 35W"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Windows 11 Pro"
+      },
+      {
+        "chave": "Chipset",
+        "valor": "AMD X600"
+      },
+      {
+        "chave": "Placa-mãe",
+        "valor": "Positivo POS-RAX600FK, formato Thin Mini-ITX"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "8GB DDR5 SO-DIMM (1x8GB), expansível até 64GB"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "2 Slots SO-DIMM DDR5, Dual Channel"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "256GB SSD M.2 NVMe Gen4"
+      },
+      {
+        "chave": "Expansão de Armazenamento",
+        "valor": "2 Slots M.2 PCIe Gen4 x4 para SSD NVMe (até 1TB)"
+      },
+      {
+        "chave": "Placa de Vídeo",
+        "valor": "AMD Radeon™ Graphics integrada ao processador, suporte a até 3 monitores simultâneos"
+      },
+      {
+        "chave": "Conectividade",
+        "valor": "Bluetooth® 5.2, Wi-Fi (IEEE 802.11AX) Wi-Fi 6, Gigabit Ethernet (RJ45)"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "Realtek ALC269, HD Áudio, Alto-falante interno de 2W"
+      },
+      {
+        "chave": "Portas de Conexão",
+        "valor": "1 HDMI 2.1, 1 DisplayPort 1.4, 1 RJ45, 4 USB 3.2 Gen 1, 2 USB 2.0, 1 Entrada Combo para Headset, 1 Entrada Line In e 1 DC-IN"
+      },
+      {
+        "chave": "Wireless",
+        "valor": "FN-Link® Wireless 6252M-PUB 2x2, Wi-Fi 6 e Bluetooth® 5.2"
+      },
+      {
+        "chave": "Gabinete",
+        "valor": "Mini PC 1,07L, Toolless, instalação horizontal, vertical ou fixado ao monitor"
+      },
+      {
+        "chave": "Fonte de Alimentação",
+        "valor": "120W, PFC Ativo, bivolt automático (100~240V)"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "USB, padrão ABNT2, resistente a derramamento de líquidos"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "USB Laser, 3 botões com scroll"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "TPM 2.0, Sensor de Intrusão, Trava Kensington®, Anilha para Cadeado e Limpeza Segura de SSD via BIOS"
+      },
+      {
+        "chave": "Cor",
+        "valor": "Preto"
+      },
+      {
+        "chave": "Dimensões",
+        "valor": "17,8 x 17,8 x 3,4cm"
+      },
+      {
+        "chave": "Peso Líquido",
+        "valor": "1,2kg"
+      },
+      {
+        "chave": "Conteúdo da Embalagem",
+        "valor": "Mini PC, Fonte de Alimentação, Cabo de Energia, Teclado USB, Mouse USB, Guia Rápido e Alto-falante interno de 2W"
+      },
+      {
+        "chave": "Certificações",
+        "valor": "Energy Star®, IEC 60950/62368, EPEAT e RoHS"
+      },
+      {
+        "chave": "Código / EAN",
+        "valor": "1308856 | 7908068827955"
+      },
+      {
+        "chave": "Modelo",
+        "valor": "Positivo Master C4500 MiniPro H8256N2XC"
+      }
+    ]
+  },
+  {
+    "id": "304",
+    "slug": "positivo-master-c6400-minipro-intel-core-i3-14100t-linux-8gb-ddr5-256gb-ssd-nvme-wi-fi-6-preto-304",
+    "categoria": "computadores",
+    "nome": "Positivo Master C6400 MiniPro",
+    "nomeCompleto": "Positivo Master C6400 MiniPro Intel® Core™ i3-14100T Linux 8GB DDR5 256GB SSD NVMe Wi-Fi 6 - Preto",
+    "codigo": "000000000001308871",
+    "resumo": "Desktop corporativo compacto com Intel Core: Modelo intermediário confiável, ideal para manter a produtividade com segurança e desempenho. Acompanha teclado e mouse.",
+    "precoPix": 3600.0,
+    "parcelas": "10x R$ 400,00",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/304/index/0?h=5538791f25f574d48b747f98443b08e77e33765c",
+    "linha": [
+      "Mini desktops"
+    ],
+    "marca": "Positivo",
+    "processador": "Intel Core i3",
+    "sistema": "Linux",
+    "armazenamento": "256GB SSD",
+    "memoria": "8GB",
+    "tela": "N/A",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "Intel® Core™ i3-14100T, 14ª Geração, 2,70GHz com frequência Turbo de até 4,40GHz, 12MB Cache, 4 Núcleos, 8 Threads"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Linux"
+      },
+      {
+        "chave": "Chipset",
+        "valor": "Intel® H670 Express"
+      },
+      {
+        "chave": "Placa-mãe",
+        "valor": "Positivo POS-RIH670FA R2, formato Thin Mini-ITX"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "8GB DDR5 SO-DIMM (1x8GB), 4800MHz"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "2 Slots SO-DIMM DDR5, suporte Dual Channel, capacidade máxima de 64GB"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "256GB SSD M.2 NVMe Gen3"
+      },
+      {
+        "chave": "Slots de Expansão",
+        "valor": "1 M.2 2230 para Wi-Fi, 1 M.2 2280 PCIe Gen4 x4/SATA para SSD e 1 SATA III para unidade de 2,5\""
+      },
+      {
+        "chave": "Placa de Vídeo",
+        "valor": "Intel® UHD Graphics Integrada"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "Realtek® ALC269, HD Áudio de 16/20/24 bits, Alto-falante Interno de 2W"
+      },
+      {
+        "chave": "Conectividade",
+        "valor": "Wi-Fi 6 (IEEE 802.11AX), Bluetooth 5.2, Gigabit Ethernet 10/100/1000Mbps"
+      },
+      {
+        "chave": "Portas Traseiras",
+        "valor": "1 HDMI 2.1, 1 DisplayPort 1.4a, 1 VGA, 1 RJ45, 2 USB 3.2 Gen 1, 2 USB 2.0, 1 Line Out e 1 DC-IN"
+      },
+      {
+        "chave": "Portas Frontais",
+        "valor": "2 USB 3.2 Gen 1 com função Always On, 1 Line In e 1 Combo Fone de Ouvido/Headset"
+      },
+      {
+        "chave": "Gerenciamento Remoto",
+        "valor": "DASH 1.2"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "TPM 2.0 Discreto, Sensor de Intrusão, Trava Kensington® e Anilha para Cadeado"
+      },
+      {
+        "chave": "Gabinete",
+        "valor": "Tiny PC 1,07L, Toolless, com uso horizontal ou vertical"
+      },
+      {
+        "chave": "Fonte de Alimentação",
+        "valor": "120W, 88% de eficiência, bivolt automática (100~240V / 50~60Hz)"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "USB, Português-Brasil, ABNT2, resistente a derramamento de líquidos"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "USB Óptico, 3 botões com scroll, 1000 DPI"
+      },
+      {
+        "chave": "Cor",
+        "valor": "Preto"
+      },
+      {
+        "chave": "Dimensões",
+        "valor": "17,8 x 17,8 x 3,4cm"
+      },
+      {
+        "chave": "Peso Líquido",
+        "valor": "1,2kg"
+      },
+      {
+        "chave": "Certificações",
+        "valor": "Portaria INMETRO 170/2012, Energy Star®, IEC 61000, CISPR22, CISPR24, IEC 60950, EPEAT, RoHS e DMI 2.0"
+      },
+      {
+        "chave": "Código / EAN",
+        "valor": "1308871 | 7908068827917"
+      },
+      {
+        "chave": "Modelo",
+        "valor": "Positivo Master C6400 MiniPro T8256N1AA"
+      }
+    ]
+  },
+  {
+    "id": "346",
+    "slug": "positivo-master-d3500-intel-core-i3-14100-windows-11-pro-8gb-ddr5-256gb-ssd-preto-346",
+    "categoria": "computadores",
+    "nome": "Positivo Master D3500",
+    "nomeCompleto": "Positivo Master D3500 Intel® Core™ i3-14100 Windows 11 Pro 8GB DDR5 256GB SSD - Preto",
+    "codigo": "1308876",
+    "resumo": "Novo desktop corporativo com Intel Core e memória DDR5: performance e equilíbrio ideal para empresas em crescimento. Acompanha teclado e mouse.",
+    "precoPix": 4710.0,
+    "parcelas": "10x R$ 523,33",
+    "imagem": "https://loja.positivoempresas.com.br/imagem/produto/id/346/index/0?h=9043017e5b0df0bd0f1623fca303ef4acc079aec",
+    "linha": [
+      "Desktops"
+    ],
+    "marca": "Positivo",
+    "processador": "Intel Core i3",
+    "sistema": "Windows 11 Pro",
+    "armazenamento": "256GB SSD",
+    "memoria": "8GB",
+    "tela": "N/A",
+    "especificacoes": [
+      {
+        "chave": "Processador",
+        "valor": "Intel® Core™ i3-14100, 14ª Geração, 3,50GHz com frequência de Turbo Boost de até 4,70GHz, 12MB Cache, 4 Núcleos, 8 Threads"
+      },
+      {
+        "chave": "Sistema Operacional",
+        "valor": "Windows 11 Pro Standard"
+      },
+      {
+        "chave": "Chipset",
+        "valor": "Intel® H610 Express"
+      },
+      {
+        "chave": "Placa-mãe",
+        "valor": "Positivo POS-RIH610FE, formato Micro-ATX"
+      },
+      {
+        "chave": "Memória RAM",
+        "valor": "8GB DDR5 DIMM (1x8GB)"
+      },
+      {
+        "chave": "Slots de Memória",
+        "valor": "2 Slots DDR5, Dual Channel"
+      },
+      {
+        "chave": "Armazenamento",
+        "valor": "256GB SSD M.2 NVMe Gen3"
+      },
+      {
+        "chave": "Placa de Vídeo",
+        "valor": "Intel® UHD Graphics integrada ao processador"
+      },
+      {
+        "chave": "Áudio",
+        "valor": "Realtek ALC897, HD Áudio de 24 bits integrado"
+      },
+      {
+        "chave": "Rede",
+        "valor": "Gigabit Ethernet 10/100/1000Mbps (Realtek RTL8111FP)"
+      },
+      {
+        "chave": "Conectividade",
+        "valor": "Gigabit Ethernet (RJ45), 1 HDMI 2.1, 1 DisplayPort 1.4a, 1 VGA, 1 USB Tipo C, 5 USB 3.2 Gen 1 (3 traseiras e 2 frontais), 4 USB 2.0 (2 traseiras e 2 frontais)"
+      },
+      {
+        "chave": "Slots de Expansão",
+        "valor": "1 PCI Express x16 Gen4, 1 PCI Express x1 Gen3, 1 M.2 2230 para Wi-Fi, 1 M.2 2280 PCIe/SATA para SSD e 3 SATA 6Gb/s"
+      },
+      {
+        "chave": "Portas Frontais",
+        "valor": "2 USB 3.2 Gen 1, 2 USB 2.0, 1 Entrada para Microfone e 1 Saída para Fone de Ouvido"
+      },
+      {
+        "chave": "Portas Traseiras",
+        "valor": "3 USB 3.2 Gen 1, 2 USB 2.0, 1 USB Tipo C, 1 HDMI 2.1, 1 DisplayPort 1.4a, 1 VGA, 1 RJ45, 1 Porta Serial e 3 Conectores de Áudio"
+      },
+      {
+        "chave": "Gabinete",
+        "valor": "Small Form Factor (8,8L), reversível (vertical ou horizontal), sistema Toolless"
+      },
+      {
+        "chave": "Fonte de Alimentação",
+        "valor": "300W, PFC Ativo, bivolt automática (100~240V / 50~60Hz)"
+      },
+      {
+        "chave": "Segurança",
+        "valor": "TPM 2.0, Sensor de Intrusão, Trava Kensington®, Anilha para Cadeado e suporte ao Computrace"
+      },
+      {
+        "chave": "Teclado",
+        "valor": "USB, padrão ABNT2, resistente a derramamento de líquidos"
+      },
+      {
+        "chave": "Mouse",
+        "valor": "USB Óptico, 3 botões, scroll e resolução de 1000 DPI"
+      },
+      {
+        "chave": "Alto-falante",
+        "valor": "Interno, potência de 2W"
+      },
+      {
+        "chave": "Cor",
+        "valor": "Preto"
+      },
+      {
+        "chave": "Dimensões",
+        "valor": "28,3 x 9,5 x 32,7cm"
+      },
+      {
+        "chave": "Peso Líquido",
+        "valor": "3,6kg"
+      },
+      {
+        "chave": "Peso Bruto",
+        "valor": "6,15kg"
+      },
+      {
+        "chave": "Conteúdo da Embalagem",
+        "valor": "Desktop, Teclado USB, Mouse USB, Cabo de Alimentação NBR 14136, Guia Rápido de Instalação e Alto-falante Interno de 2W"
+      },
+      {
+        "chave": "Certificações",
+        "valor": "Portaria INMETRO 304/2023, IEC 61000, CISPR22, CISPR24, IEC 60950, 80 Plus Gold e RoHS"
+      },
+      {
+        "chave": "Garantia",
+        "valor": "Conforme fabricante"
+      },
+      {
+        "chave": "Código / EAN",
+        "valor": "1308876 | 7908068827863"
+      },
+      {
+        "chave": "Modelo",
+        "valor": "Positivo Master D3500 ST8256N0H610GXC"
+      }
+    ]
+  }
+]
