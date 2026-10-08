@@ -32,50 +32,61 @@ export function Login({ error, loading, onSubmit }) {
       <a className="skip-link" href="#entrar">
         Ir para o acesso
       </a>
-      <section className="login-layout">
+      <header className="login-top">
+        <img src={LOGO} alt="Positivo Empresas" />
+        <p>Laboratório de agentes</p>
+      </header>
+      <section className="login-stage">
         <div className="login-copy">
-          <img src={LOGO} alt="Positivo Empresas" />
-          <p className="kicker">Laboratório</p>
-          <h1>Teste os agentes da Positivo.</h1>
+          <h1>
+            <span>Teste os agentes da Positivo.</span>
+          </h1>
           <p>
             Um token abre a bancada. Depois você escolhe o assistente e
             conversa por voz ou por texto.
           </p>
         </div>
-        <form id="entrar" className="login-panel" autoComplete="off" onSubmit={handleSubmit}>
-          <div className="login-autofill-trap" aria-hidden="true">
-            <input type="text" tabIndex={-1} autoComplete="username" />
-          </div>
-          <label className="field">
-            <span>Token de acesso</span>
-            <input
-              type="password"
-              name="ex_access"
-              autoComplete="off"
-              autoCorrect="off"
-              autoCapitalize="off"
-              spellCheck={false}
-              placeholder="Cole o token recebido"
-              value={token}
-              readOnly={!unlockField}
-              data-1p-ignore="true"
-              data-lpignore="true"
-              data-form-type="other"
-              onFocus={() => setUnlockField(true)}
-              onChange={(event) => setToken(event.target.value)}
-            />
-          </label>
-          <button type="submit" className="cta" disabled={loading}>
-            {loading ? 'Verificando...' : 'Entrar'}
-          </button>
-          {message ? (
-            <p className="form-error" role="alert">
-              {message}
-            </p>
-          ) : null}
-        </form>
+        <div className="login-shell">
+          <form id="entrar" className="login-panel" autoComplete="off" onSubmit={handleSubmit}>
+            <div className="login-autofill-trap" aria-hidden="true">
+              <input type="text" tabIndex={-1} autoComplete="username" />
+            </div>
+            <label className="field">
+              <span>Token de acesso</span>
+              <input
+                type="password"
+                name="ex_access"
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="off"
+                spellCheck={false}
+                placeholder="Cole o token recebido"
+                value={token}
+                readOnly={!unlockField}
+                data-1p-ignore="true"
+                data-lpignore="true"
+                data-form-type="other"
+                onFocus={() => setUnlockField(true)}
+                onChange={(event) => setToken(event.target.value)}
+              />
+            </label>
+            <button type="submit" className="cta" disabled={loading}>
+              <span>{loading ? 'Verificando...' : 'Entrar'}</span>
+              <i aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M2 7h10M8.5 3.5 12 7 8.5 10.5" stroke="currentColor" strokeWidth="1.4" />
+                </svg>
+              </i>
+            </button>
+            {message ? (
+              <p className="form-error" role="alert">
+                {message}
+              </p>
+            ) : null}
+          </form>
+        </div>
       </section>
-      <footer className="login-rail" aria-hidden="true">
+      <footer className="login-mark" aria-hidden="true">
         <p>Positivo</p>
       </footer>
     </div>
