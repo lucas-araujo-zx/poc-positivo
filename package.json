@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build && node scripts/write-vercel-output.mjs",
     "preview": "vite preview",
-    "test": "node --test server/agents.test.js"
+    "test": "node --test server/*.test.js"
   },
   "dependencies": {
     "react": "^19.1.0",

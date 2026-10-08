@@ -13,7 +13,7 @@ export function clearToken() {
 }
 
 async function request(path, { method = 'GET', token = '', body } = {}) {
-  const headers = {}
+  const headers = { 'x-positivo-path': path }
   if (token) {
     headers['x-positivo-token'] = token
   }
@@ -25,6 +25,10 @@ async function request(path, { method = 'GET', token = '', body } = {}) {
     headers,
     body: body ? JSON.stringify(body) : undefined,
   })
+  const type = response.headers.get('content-type') ?? ''
+  if (!type.includes('application/json')) {
+    throw new Error('A API não respondeu JSON. Publique o laboratório de novo.')
+  }
   const payload = await response.json().catch(() => ({}))
   if (!response.ok) {
     throw new Error(payload.error || 'Não foi possível concluir o pedido.')

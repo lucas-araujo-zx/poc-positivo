@@ -51,6 +51,7 @@ await writeFile(
     {
       version: 3,
       routes: [
+        { src: '^/api(?:/.*)?$', dest: '/api/login' },
         { handle: 'filesystem' },
         { src: '/(.*)', dest: '/index.html' },
       ],

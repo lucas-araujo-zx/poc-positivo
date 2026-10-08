@@ -1,22 +1,55 @@
 import { dispatchApi } from './plugin.js'
 
-function tokenFrom(req) {
-  const value = req.headers['x-positivo-token'] ?? req.headers['X-Positivo-Token']
+function headerValue(req, name) {
+  const value = req.headers[name] ?? req.headers[name.toLowerCase()]
   return (Array.isArray(value) ? value[0] : value)?.trim() ?? ''
 }
 
+function tokenFrom(req) {
+  return headerValue(req, 'x-positivo-token')
+}
+
+function apiTarget(value, searchParams) {
+  if (!value || value.includes('://') || value.includes('..')) {
+    return null
+  }
+  const url = new URL(value, 'http://localhost')
+  if (url.pathname !== '/api' && !url.pathname.startsWith('/api/')) {
+    return null
+  }
+  searchParams?.forEach((item, key) => {
+    if (key !== '__positivo_path' && !url.searchParams.has(key)) {
+      url.searchParams.append(key, item)
+    }
+  })
+  return url
+}
+
 function requestTarget(req) {
-  const raw = req.url ?? '/'
-  const url = new URL(raw, 'http://localhost')
-  if (url.pathname.startsWith('/api/')) {
+  const url = new URL(req.url ?? '/', 'http://localhost')
+  const hinted = apiTarget(headerValue(req, 'x-positivo-path'), url.searchParams)
+  const method = (req.method ?? 'GET').toUpperCase()
+  const rewritten =
+    url.pathname === '/api' ||
+    url.pathname === '/api/' ||
+    url.pathname.includes('[') ||
+    (url.pathname === '/api/login' && method !== 'POST')
+
+  if (!rewritten && url.pathname.startsWith('/api/')) {
     return url
+  }
+  if (hinted) {
+    return hinted
   }
   const parts = []
     .concat(req.query?.path ?? [])
     .flat()
     .filter(Boolean)
-  const suffix = parts.map((part) => encodeURIComponent(part)).join('/')
-  return new URL(`/api/${suffix}${url.search}`, 'http://localhost')
+  if (parts.length) {
+    const suffix = parts.map((part) => encodeURIComponent(part)).join('/')
+    return new URL(`/api/${suffix}${url.search}`, 'http://localhost')
+  }
+  return url
 }
 
 async function jsonBody(req) {

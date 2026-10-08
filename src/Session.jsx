@@ -47,11 +47,14 @@ export function Session({ token, agent, onBack, onSignOut }) {
         if (cancelled) {
           return
         }
+        const variables = Array.isArray(setup.variables) ? setup.variables : null
+        if (!variables) {
+          setLoadError('Não consegui ler as variáveis deste agente.')
+          return
+        }
         setTitle(setup.name || agent.name)
-        setFields(setup.variables)
-        setValues(
-          Object.fromEntries(setup.variables.map((field) => [field.name, ''])),
-        )
+        setFields(variables)
+        setValues(Object.fromEntries(variables.map((field) => [field.name, ''])))
       })
       .catch((error) => {
         if (!cancelled) {
