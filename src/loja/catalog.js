@@ -169,10 +169,6 @@ export function targetCategory(pathname, args) {
 export function cardOf(product) {
   return {
     nome: product.nome,
-    preco_pix: formatBrl(product.precoPix),
-    memoria: product.memoria,
-    processador: product.processador,
-    slug: product.slug,
   };
 }
 
@@ -209,26 +205,18 @@ export function describeFilters(filters) {
 
 export function contextText(pathname, filtersByCategory) {
   if (pathname.startsWith("/produto/")) {
-    const product = productBySlug(decodeURIComponent(pathname.split("/")[2] ?? ""));
-    if (!product) return "O cliente está numa página de produto que não existe nesta réplica.";
-    const specs = product.especificacoes
-      .map((item) => `${item.chave}: ${item.valor}`)
-      .join("; ");
-    return `O cliente está na ficha de ${product.nome}. Preço PIX a partir de ${formatBrl(product.precoPix)} (${product.parcelas}). Especificações: ${specs}`;
+    return "O cliente está numa ficha desta réplica. Preço, SKU e especificação não vêm desta tela. Responda pela base de conhecimento.";
   }
 
   const categoria = categoryFromPath(pathname);
   if (!categoria) {
-    return "O cliente está na página inicial da loja. Ainda não há lista filtrada na tela.";
+    return "O cliente está na página inicial da loja. Ainda não há lista filtrada na tela. Preço, SKU e especificação vêm só da base de conhecimento.";
   }
 
   const filters = filtersByCategory[categoria] ?? blankFilters();
   const payload = listPayload(categoria, filters);
-  const linhas = payload.produtos
-    .map((item) => `${item.nome} (${item.memoria}, ${item.processador}, ${item.preco_pix} no PIX)`)
-    .join("; ");
   const vazio = payload.total === 0 ? " Nenhum produto corresponde aos filtros." : "";
-  return `O cliente está na lista de ${CATEGORIES[categoria]}. Filtros ativos: ${payload.filtros}. Resultados: ${payload.total}.${vazio} Visíveis: ${linhas || "nenhum"}.`;
+  return `O cliente está na lista de ${CATEGORIES[categoria]}. Filtros ativos: ${payload.filtros}. Resultados na tela: ${payload.total}.${vazio} Preço, SKU e especificação não vêm desta tela.`;
 }
 
 export function applyToolFilters(current, args) {

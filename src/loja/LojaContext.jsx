@@ -6,8 +6,6 @@ import {
   contextText,
   describeFilters,
   listPayload,
-  productBySlug,
-  productPayload,
   targetCategory,
 } from "./catalog";
 import { AGENT_ID, sendContextualUpdate } from "./convai";
@@ -78,21 +76,58 @@ export function LojaProvider({ children }) {
         return asResult({ ...listPayload(destino, filters), avisos });
       },
 
-      abrir_produto(args) {
-        const product = productBySlug(args?.slug);
-        if (!product) {
-          return asResult({ erro: "produto não encontrado. Use um slug devolvido pela lista." });
+      abrir_pagina_produto(args) {
+        const url = String(args?.url ?? "").trim();
+        let parsed;
+        try {
+          parsed = new URL(url);
+        } catch {
+          return asResult({ erro: "url inválida" });
         }
-        navigate(`/produto/${product.slug}`);
-        return asResult(productPayload(product));
+        const host = parsed.hostname.toLowerCase();
+        if (parsed.protocol !== "https:" || !host.endsWith("positivoempresas.com.br")) {
+          return asResult({ erro: "url fora da loja Positivo Empresas" });
+        }
+        const opened = window.open(url, "_blank");
+        if (opened) {
+          opened.opener = null;
+          return asResult({ aberto: true, url });
+        }
+        let link = document.getElementById("positivo-abrir-oficial");
+        if (!link) {
+          link = document.createElement("a");
+          link.id = "positivo-abrir-oficial";
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = "Abrir página oficial";
+          link.style.position = "fixed";
+          link.style.right = "24px";
+          link.style.bottom = "96px";
+          link.style.zIndex = "2147483646";
+          link.style.background = "#1e4f91";
+          link.style.color = "#fff";
+          link.style.padding = "14px 18px";
+          link.style.borderRadius = "999px";
+          link.style.font = "600 14px/1 sans-serif";
+          link.style.textDecoration = "none";
+          document.body.appendChild(link);
+        }
+        link.href = url;
+        return asResult({
+          aberto: false,
+          url,
+          erro: "o navegador bloqueou a nova guia",
+          botao: "Abrir página oficial",
+        });
       },
 
       ler_pagina() {
         const pathname = locationRef.current.pathname;
         if (pathname.startsWith("/produto/")) {
-          const product = productBySlug(decodeURIComponent(pathname.split("/")[2] ?? ""));
-          if (!product) return asResult({ erro: "página de produto não encontrada" });
-          return asResult(productPayload(product));
+          return asResult({
+            pagina: "produto",
+            aviso: "A ficha desta tela não é fonte de preço, SKU nem especificação.",
+          });
         }
         if (pathname.startsWith("/categoria/")) {
           const categoria = pathname.includes("computadores") ? "computadores" : "notebooks";
@@ -139,7 +174,7 @@ export function LojaProvider({ children }) {
       config.clientTools = {
         navegar: (params) => actionsRef.current.navegar(params),
         filtrar_catalogo: (params) => actionsRef.current.filtrar_catalogo(params),
-        abrir_produto: (params) => actionsRef.current.abrir_produto(params),
+        abrir_pagina_produto: (params) => actionsRef.current.abrir_pagina_produto(params),
         ler_pagina: () => actionsRef.current.ler_pagina(),
       };
     };
