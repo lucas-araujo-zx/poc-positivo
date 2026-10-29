@@ -6,7 +6,9 @@ import {
   shapeConversation,
   tokensMatch,
   WEBSITE_AGENT,
+  WHATSAPP_SERVICE,
 } from './agents.js'
+import { assignNumber, loadSetup, readElevenError, sendBatch } from './whatsapp.js'
 
 function json(res, status, body) {
   res.statusCode = status
@@ -23,13 +25,13 @@ function headerToken(req) {
   return (Array.isArray(value) ? value[0] : value)?.trim() ?? ''
 }
 
-function readBody(req) {
+function readBody(req, maxBytes = 4096) {
   return new Promise((resolve, reject) => {
     const chunks = []
     let size = 0
     req.on('data', (chunk) => {
       size += chunk.length
-      if (size > 4096) {
+      if (size > maxBytes) {
         reject(new Error('payload'))
         req.destroy()
         return
@@ -70,16 +72,8 @@ function knownAgent(env, agentId) {
 }
 
 async function elevenFetch(env, path) {
-  if (!env.apiKey) {
-    return { ok: false, status: 503, error: 'A ElevenLabs ainda não foi configurada.' }
-  }
-  const response = await fetch(`https://api.elevenlabs.io${path}`, {
-    headers: { 'xi-api-key': env.apiKey },
-  })
-  if (response.status === 401) {
-    return { ok: false, status: 401, error: 'A chave da ElevenLabs foi recusada.' }
-  }
-  if (response.status === 404) {
+  const result = await elevenRequest(env, path)
+  if (!result.ok && result.status === 404) {
     return {
       ok: false,
       status: 404,
@@ -87,10 +81,63 @@ async function elevenFetch(env, path) {
         'Não encontrei esse agente na conta da ElevenLabs configurada. Use a chave dessa conta em ELEVENLABS_API_KEY.',
     }
   }
-  if (!response.ok) {
+  if (!result.ok && result.status !== 401 && result.status !== 503) {
     return { ok: false, status: 502, error: 'Não foi possível falar com a ElevenLabs.' }
   }
-  return { ok: true, body: await response.json() }
+  return result
+}
+
+async function elevenRequest(env, path, { method = 'GET', body } = {}) {
+  if (!env.apiKey) {
+    return { ok: false, status: 503, error: 'A ElevenLabs ainda não foi configurada.' }
+  }
+  let response
+  try {
+    response = await fetch(`https://api.elevenlabs.io${path}`, {
+      method,
+      headers: {
+        'xi-api-key': env.apiKey,
+        ...(body ? { 'Content-Type': 'application/json' } : {}),
+      },
+      body: body ? JSON.stringify(body) : undefined,
+    })
+  } catch {
+    return { ok: false, status: 502, error: 'Não foi possível falar com a ElevenLabs.' }
+  }
+  const text = await response.text()
+  let parsed = null
+  if (text) {
+    try {
+      parsed = JSON.parse(text)
+    } catch {
+      parsed = null
+    }
+  }
+  const retryAfterMs = readRetryAfterMs(response.headers.get('retry-after'))
+  if (response.ok) return { ok: true, status: response.status, body: parsed, retryAfterMs }
+  if (response.status === 401) {
+    return { ok: false, status: 401, error: 'A chave da ElevenLabs foi recusada.', body: parsed, retryAfterMs }
+  }
+  const fallback =
+    response.status === 429
+      ? 'A ElevenLabs limitou os envios. Espere um pouco e tente de novo.'
+      : 'Não foi possível falar com a ElevenLabs.'
+  return {
+    ok: false,
+    status: response.status,
+    error: readElevenError(parsed, fallback),
+    body: parsed,
+    retryAfterMs,
+  }
+}
+
+function readRetryAfterMs(header) {
+  if (!header) return 0
+  const seconds = Number(header)
+  if (Number.isFinite(seconds) && seconds >= 0) return Math.round(seconds * 1000)
+  const date = Date.parse(header)
+  if (Number.isFinite(date)) return Math.max(0, date - Date.now())
+  return 0
 }
 
 export async function dispatchApi({ method, pathname, searchParams, token, body }, env) {
@@ -106,6 +153,52 @@ export async function dispatchApi({ method, pathname, searchParams, token, body 
 
   if (!path.startsWith('/api/')) {
     return null
+  }
+
+  if (path === '/api/whatsapp/setup' && method === 'GET') {
+    const denied = authError(token, env)
+    if (denied) return { status: denied.status, payload: { error: denied.error } }
+    const agentId = searchParams.get('agent_id') ?? ''
+    if (!knownAgent(env, agentId)) {
+      return { status: 404, payload: { error: 'Agente desconhecido.' } }
+    }
+    return loadSetup(agentId, (requestMethod, requestPath, requestBody) =>
+      elevenRequest(env, requestPath, { method: requestMethod, body: requestBody }),
+    )
+  }
+
+  if (path === '/api/whatsapp/assignment' && method === 'POST') {
+    const denied = authError(token, env)
+    if (denied) return { status: denied.status, payload: { error: denied.error } }
+    const rawAgent = body?.agentId
+    const agentId = rawAgent == null || rawAgent === '' ? null : String(rawAgent)
+    if (agentId && !knownAgent(env, agentId)) {
+      return { status: 404, payload: { error: 'Agente desconhecido.' } }
+    }
+    return assignNumber({ phoneNumberId: body?.phoneNumberId, agentId }, (requestMethod, requestPath, requestBody) =>
+      elevenRequest(env, requestPath, { method: requestMethod, body: requestBody }),
+    )
+  }
+
+  if (path === '/api/whatsapp/dispatch' && method === 'POST') {
+    const denied = authError(token, env)
+    if (denied) return { status: denied.status, payload: { error: denied.error } }
+    const agentId = String(body?.agentId ?? '')
+    if (!knownAgent(env, agentId)) {
+      return { status: 404, payload: { error: 'Agente desconhecido.' } }
+    }
+    return sendBatch(
+      {
+        agentId,
+        phoneNumberId: body?.phoneNumberId,
+        templateName: body?.templateName,
+        templateLanguage: body?.templateLanguage,
+        campaignName: body?.campaignName,
+        recipients: body?.recipients,
+      },
+      (requestMethod, requestPath, requestBody) =>
+        elevenRequest(env, requestPath, { method: requestMethod, body: requestBody }),
+    )
   }
 
   if (method !== 'GET') {
@@ -136,6 +229,7 @@ export async function dispatchApi({ method, pathname, searchParams, token, body 
           ...WEBSITE_AGENT,
           path: '/loja',
         },
+        whatsapp: WHATSAPP_SERVICE,
       },
     }
   }
@@ -218,7 +312,9 @@ export function labApiPlugin(env) {
         return
       }
       void (async () => {
-        const body = req.method === 'POST' ? await readBody(req) : undefined
+        const maxBytes =
+          url.pathname.replace(/\/+$/, '') === '/api/whatsapp/dispatch' ? 512 * 1024 : 4096
+        const body = req.method === 'POST' ? await readBody(req, maxBytes) : undefined
         return dispatchApi(
           {
             method: req.method ?? 'GET',
@@ -241,7 +337,12 @@ export function labApiPlugin(env) {
           if (!res.headersSent) {
             const invalid = error instanceof Error && (error.message === 'json' || error.message === 'payload')
             json(res, invalid ? 400 : 500, {
-              error: invalid ? 'Não consegui ler o token.' : 'Falha interna.',
+              error:
+                error.message === 'payload'
+                  ? 'O lote passou do tamanho aceito.'
+                  : invalid
+                    ? 'Não consegui ler o pedido.'
+                    : 'Falha interna.',
             })
           }
         })

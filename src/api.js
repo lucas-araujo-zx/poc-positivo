@@ -54,6 +54,18 @@ export function signedUrl(token, agentId) {
   })
 }
 
+export function whatsappSetup(token, agentId) {
+  return request(`/api/whatsapp/setup?agent_id=${encodeURIComponent(agentId)}`, { token })
+}
+
+export function whatsappAssign(token, body) {
+  return request('/api/whatsapp/assignment', { method: 'POST', token, body })
+}
+
+export function whatsappDispatch(token, body) {
+  return request('/api/whatsapp/dispatch', { method: 'POST', token, body })
+}
+
 export function conversation(token, agentId, conversationId) {
   const params = new URLSearchParams({ agent_id: agentId })
   return request(

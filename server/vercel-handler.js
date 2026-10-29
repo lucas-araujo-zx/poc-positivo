@@ -78,13 +78,20 @@ async function jsonBody(req) {
 export default async function handler(req, res) {
   try {
     const url = requestTarget(req)
+    let body
+    try {
+      body = await jsonBody(req)
+    } catch {
+      res.status(400).json({ error: 'Não consegui ler o pedido.' })
+      return
+    }
     const result = await dispatchApi(
       {
         method: req.method ?? 'GET',
         pathname: url.pathname,
         searchParams: url.searchParams,
         token: tokenFrom(req),
-        body: await jsonBody(req),
+        body,
       },
       {
         loginToken: process.env.POSITIVO_LOGIN_TOKEN ?? '',

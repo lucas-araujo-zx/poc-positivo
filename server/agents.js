@@ -10,6 +10,13 @@ export const WEBSITE_AGENT = {
     'Abre a loja para testar a Mia navegando o catálogo, filtrando e abrindo a ficha do produto.',
 }
 
+export const WHATSAPP_SERVICE = {
+  name: 'Disparos de WhatsApp',
+  description:
+    'Sobe um CSV ou XLSX e envia uma mensagem ativa para cada linha, com as variáveis do agente.',
+  path: '/disparos',
+}
+
 export function parseAgentIds(raw) {
   const text = String(raw ?? '')
     .trim()

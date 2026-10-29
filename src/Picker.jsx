@@ -15,7 +15,15 @@ function StorePreview() {
   )
 }
 
-export function Picker({ agents, website, onOpen, onOpenStore, onSignOut }) {
+export function Picker({
+  agents,
+  website,
+  whatsapp,
+  onOpen,
+  onOpenStore,
+  onOpenOutbound,
+  onSignOut,
+}) {
   return (
     <div className="lab-app">
       <LabHeader onHome={() => onOpen('')} onSignOut={onSignOut} />
@@ -25,7 +33,8 @@ export function Picker({ agents, website, onOpen, onOpenStore, onSignOut }) {
           <h1>Qual agente você quer testar?</h1>
           <p>
             Os agentes do widget pedem as variáveis e devolvem o resultado da
-            chamada. O consultor da loja abre o site neste mesmo endereço.
+            chamada. A loja abre o site. Os disparos enviam uma mensagem ativa
+            de WhatsApp para cada linha da planilha.
           </p>
         </header>
         <div className="agent-grid">
@@ -38,11 +47,22 @@ export function Picker({ agents, website, onOpen, onOpenStore, onSignOut }) {
               Abrir a loja
             </button>
           </article>
+          <article className="agent-card" style={{ '--i': 1 }}>
+            <p className="card-kicker">Fixo · WhatsApp</p>
+            <h2>{whatsapp?.name || 'Disparos de WhatsApp'}</h2>
+            <p>
+              {whatsapp?.description ||
+                'Sobe um CSV ou XLSX e envia uma mensagem ativa para cada linha.'}
+            </p>
+            <button type="button" className="cta" onClick={onOpenOutbound}>
+              Abrir disparos
+            </button>
+          </article>
           {agents.map((agent, index) => (
             <article
               key={agent.id}
               className="agent-card"
-              style={{ '--i': index + 1 }}
+              style={{ '--i': index + 2 }}
             >
               <p className="card-kicker">Widget · {String(index + 1).padStart(2, '0')}</p>
               <h2>{agent.name || 'Nome indisponível'}</h2>
@@ -56,7 +76,7 @@ export function Picker({ agents, website, onOpen, onOpenStore, onSignOut }) {
             </article>
           ))}
           {agents.length === 0 ? (
-            <article className="agent-card is-empty" style={{ '--i': 1 }}>
+            <article className="agent-card is-empty" style={{ '--i': 2 }}>
               <p className="card-kicker">Widget</p>
               <h2>Nenhum agente cadastrado</h2>
               <p>

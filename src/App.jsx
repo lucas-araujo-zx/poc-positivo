@@ -3,6 +3,7 @@ import { catalog, clearToken, login, readToken, writeToken } from './api.js'
 import { Login } from './Login.jsx'
 import { Picker } from './Picker.jsx'
 import { Session } from './Session.jsx'
+import { Disparos } from './disparos/Disparos.jsx'
 import { StoreShell } from './StoreShell.jsx'
 
 function agentIdFromPath(path) {
@@ -70,7 +71,11 @@ export function App() {
       writeToken(next)
       setToken(next)
       const current = window.location.pathname
-      if (current !== '/' && !current.startsWith('/loja')) {
+      if (
+        current !== '/' &&
+        !current.startsWith('/loja') &&
+        !current.startsWith('/disparos')
+      ) {
         go('/')
       }
     } catch (error) {
@@ -101,6 +106,17 @@ export function App() {
     return <StoreShell onLeave={() => go('/')} onSignOut={signOut} />
   }
 
+  if (path === '/disparos') {
+    return (
+      <Disparos
+        token={token}
+        agents={catalogData.agents}
+        onBack={() => go('/')}
+        onSignOut={signOut}
+      />
+    )
+  }
+
   const agent = catalogData.agents.find((item) => item.id === agentIdFromPath(path))
   if (agent) {
     return (
@@ -118,8 +134,10 @@ export function App() {
     <Picker
       agents={catalogData.agents}
       website={catalogData.website}
+      whatsapp={catalogData.whatsapp}
       onOpen={(id) => go(id ? `/agente/${encodeURIComponent(id)}` : '/')}
       onOpenStore={() => go('/loja')}
+      onOpenOutbound={() => go('/disparos')}
       onSignOut={signOut}
     />
   )
