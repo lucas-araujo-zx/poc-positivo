@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict'
+import { readFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
 import test from 'node:test'
+import { fileURLToPath } from 'node:url'
 import handler from './vercel-handler.js'
 
 function call(method, url, { token = 'segredo-local', path = '', agents = 'agent_abcdefgh' } = {}) {
@@ -26,6 +29,23 @@ function call(method, url, { token = 'segredo-local', path = '', agents = 'agent
   }
   return handler(req, res).then(() => ({ statusCode, payload }))
 }
+
+test('the Vercel build copies every module the handler imports', () => {
+  const root = join(dirname(fileURLToPath(import.meta.url)), '..')
+  const script = readFileSync(join(root, 'scripts/write-vercel-output.mjs'), 'utf8')
+  const copied = new Set(['vercel-handler.js'])
+  for (const match of script.matchAll(/server\/([^'"]+\.js)/g)) copied.add(match[1])
+  const pending = ['vercel-handler.js']
+  const seen = new Set()
+  while (pending.length) {
+    const file = pending.pop()
+    if (seen.has(file)) continue
+    seen.add(file)
+    const source = readFileSync(join(root, 'server', file), 'utf8')
+    for (const match of source.matchAll(/from '\.\/([^']+\.js)'/g)) pending.push(match[1])
+  }
+  for (const file of seen) assert.ok(copied.has(file), file)
+})
 
 test('rewritten agent routes keep the path from the page', async () => {
   const setup = await call('GET', '/api/login', {

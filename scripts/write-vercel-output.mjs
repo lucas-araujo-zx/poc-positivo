@@ -12,6 +12,7 @@ await cp(join(root, 'dist'), join(output, 'static'), { recursive: true })
 await cp(join(root, 'server/vercel-handler.js'), join(funcDir, 'index.js'))
 await cp(join(root, 'server/plugin.js'), join(funcDir, 'plugin.js'))
 await cp(join(root, 'server/agents.js'), join(funcDir, 'agents.js'))
+await cp(join(root, 'server/whatsapp.js'), join(funcDir, 'whatsapp.js'))
 await writeFile(
   join(funcDir, 'package.json'),
   `${JSON.stringify({ type: 'module' }, null, 2)}\n`,
